@@ -4,7 +4,7 @@ using Infrastructure.DataAccess;
 using Microsoft.EntityFrameworkCore;
 namespace Infrastructure.Implementations;
 
-public class StudentService : IStudentService
+public sealed class StudentService(DataContext dbContext) : IStudentService
 {
     public List<Student> GetStudents()
     {

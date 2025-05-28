@@ -9,6 +9,7 @@ builder.Services.AddDbContext<DataContext>(x
     => x.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<ICourseService, CourseService>();
+builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddControllers(); 
 builder.Services.AddSwaggerGen();
 WebApplication app = builder.Build();

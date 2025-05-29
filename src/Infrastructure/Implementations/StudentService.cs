@@ -6,10 +6,8 @@ namespace Infrastructure.Implementations;
 
 public sealed class StudentService(DataContext dbContext) : IStudentService
 {
-    public List<Student> GetStudents()
-    {
-        throw new NotImplementedException();
-    }
+    public List<Student> GetStudents() 
+        => dbContext.Students.AsNoTracking().ToList();
 
     public Student? GetStudentById(int id)
     {

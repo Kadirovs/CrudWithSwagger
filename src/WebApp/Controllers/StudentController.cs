@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Controllers;
 
-[Route("api/courses")]
+[Route("api/students")]
 [ApiController]
 public sealed class StudentController(IStudentService studentService) : ControllerBase
 {

@@ -16,7 +16,8 @@ public sealed class CourseService(DataContext dbContext) : ICourseService
 
     public bool CreateCourse(Course course)
     {
-        Course? existingCourse = dbContext.Courses.AsNoTracking().FirstOrDefault(x => x.Name == course.Name);
+        Course? existingCourse = dbContext.Courses.AsNoTracking()
+            .FirstOrDefault(x => x.Name == course.Name);
         if (existingCourse != null)
             return false;
 

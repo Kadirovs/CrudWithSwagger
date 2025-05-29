@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+
 namespace Application.Contracts;
 
 public interface IStudentService
@@ -8,6 +9,4 @@ public interface IStudentService
     bool CreateStudent(Student student);
     bool UpdateStudent(Student student);
     bool DeleteStudent(int id);
-    
-    
 }

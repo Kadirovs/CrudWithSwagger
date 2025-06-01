@@ -11,6 +11,7 @@ builder.Services.AddDbContext<DataContext>(x
 builder.Services.AddScoped<ICourseService, CourseService>();
 builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<IMentorService, MentorService>();
+builder.Services.AddScoped<IGroupService, GroupService>();
 builder.Services.AddControllers(); 
 builder.Services.AddSwaggerGen();
 WebApplication app = builder.Build();

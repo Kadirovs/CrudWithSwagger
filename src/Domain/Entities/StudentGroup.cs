@@ -9,4 +9,9 @@ public sealed class StudentGroup : BaseEntity
     public Group Group { get; set; } = null!;
     
     public List<StudentGroup> StudentGroups { get; set; } = [];
+    
+    /*
+     * Hello World.
+     */
+    
 }

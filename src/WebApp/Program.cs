@@ -12,10 +12,10 @@ builder.Services.AddScoped<ICourseService, CourseService>();
 builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<IMentorService, MentorService>();
 builder.Services.AddScoped<IGroupService, GroupService>();
-builder.Services.AddScoped<IStudentGroupService, IStudentGroupService>();
 builder.Services.AddControllers(); 
 builder.Services.AddSwaggerGen();
-WebApplication app = builder.Build();
+
+var app = builder.Build();
 
 app.MapGet("/datetime", () => DateTime.Now);
 app.MapGet("/datetimeoffset", () => DateTimeOffset.Now);

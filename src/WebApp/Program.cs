@@ -15,8 +15,7 @@ builder.Services.AddScoped<IGroupService, GroupService>();
 builder.Services.AddControllers(); 
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
-
+WebApplication app = builder.Build();
 app.MapGet("/datetime", () => DateTime.Now);
 app.MapGet("/datetimeoffset", () => DateTimeOffset.Now);
 

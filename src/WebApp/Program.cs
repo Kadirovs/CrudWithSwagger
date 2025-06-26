@@ -18,7 +18,9 @@ builder.Services.AddSwaggerGen();
 WebApplication app = builder.Build();
 app.MapGet("/datetime", () => DateTime.Now);
 app.MapGet("/datetimeoffset", () => DateTimeOffset.Now);
-
+/*
+ * ваҷаааааааҷ
+ */
 app.UseSwagger();
 app.UseSwaggerUI(); 
 app.MapControllers();  

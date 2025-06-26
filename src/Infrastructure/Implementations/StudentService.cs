@@ -39,7 +39,7 @@ public sealed class StudentService(DataContext dbContext) : IStudentService
             return false;
         return true;
     }
-
+/*This is Delete version */
     public bool DeleteStudent(int id)
     {
         Student? existingStudent = dbContext.Students.AsNoTracking()

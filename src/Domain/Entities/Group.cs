@@ -10,4 +10,5 @@ public sealed class Group : BaseEntity
 
     public List<MentorGroup> MentorGroups { get; set; } = [];
     public List<StudentGroup> StudentGroups { get; set; } = [];
+    
 }

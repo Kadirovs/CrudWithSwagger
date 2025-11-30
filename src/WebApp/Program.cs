@@ -19,7 +19,6 @@ WebApplication app = builder.Build();
 app.MapGet("/datetime", () => DateTime.Now);
 app.MapGet("/datetimeoffset", () => DateTimeOffset.Now);
 /*
- * ваҷаааааааҷ
  * Everything was burned
  */
 app.UseSwagger();

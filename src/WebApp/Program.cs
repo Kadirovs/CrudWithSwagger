@@ -21,7 +21,7 @@ app.MapGet("/datetimeoffset", () => DateTimeOffset.Now);
 /*
  * Everything was burned
  * Think fast
- * Do it first okay
+ * Do it first okay to me
  */
 app.UseSwagger();
 app.UseSwaggerUI(); 

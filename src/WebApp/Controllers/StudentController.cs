@@ -31,8 +31,8 @@ public sealed class StudentController(IStudentService studentService) : Controll
             return BadRequest("Student already exist");
         return Ok(res);
     }
-
-
+    
+    
     [HttpPut]
     public IActionResult Update([FromBody] Student student)
     {
